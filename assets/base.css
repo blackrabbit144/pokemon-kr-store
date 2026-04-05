@@ -3715,3 +3715,36 @@ slideshow-component {
 .slideshow__controls .slider-button--next:hover {
   background: rgba(255,255,255,0.5) !important;
 }
+
+.email-signup-banner {
+  background: #E60012 !important;
+  background-image: none !important;
+}
+
+.section-template--19484099969107__newsletter .color-scheme-4,
+.section-template--19484099969107__newsletter.color-scheme-4 {
+  background: #E60012 !important;
+  background-image: none !important;
+  color: #ffffff !important;
+}
+
+.shopify-section:has(.newsletter__wrapper) {
+  background: #E60012 !important;
+}
+
+.newsletter__wrapper {
+  background: #E60012 !important;
+  background-image: none !important;
+}
+
+.newsletter__wrapper * {
+  color: #ffffff !important;
+}
+
+.newsletter__wrapper .field__input {
+  color: #333 !important;
+}
+
+.newsletter__wrapper .field__label {
+  color: #333 !important;
+}

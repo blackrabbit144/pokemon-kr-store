@@ -37,7 +37,7 @@
       "block_order": ["slide_1", "slide_2"],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "large",
+        "slide_height": "medium",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
@@ -285,7 +285,7 @@
   },
   "block_order": ["heading", "subheading", "email_form"],
   "settings": {
-    "color_scheme": "scheme-4",
+    "color_scheme": "scheme-1",
     "full_width": true,
     "padding_top": 40,
     "padding_bottom": 40

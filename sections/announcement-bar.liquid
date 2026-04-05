@@ -74,7 +74,7 @@
             id="Slider-{{ section.id }}"
             aria-live="polite"
             aria-atomic="true"
-            data-autoplay="{{ section.settings.auto_rotate }}"
+            data-autoplay="true"
             data-speed="{{ section.settings.change_slides_speed }}"
           >
             {%- for block in section.blocks -%}
@@ -175,7 +175,7 @@
       "type": "checkbox",
       "id": "auto_rotate",
       "label": "t:sections.announcement-bar.settings.auto_rotate.label",
-      "default": false
+      "default": true
     },
     {
       "type": "range",
