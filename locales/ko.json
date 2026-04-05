@@ -67,7 +67,7 @@
     }
   },
   "newsletter": {
-    "label": "이메일",
+    "label": "Email",
     "success": "가입해주셔서 감사합니다.",
     "button_label": "가입하기"
   },
