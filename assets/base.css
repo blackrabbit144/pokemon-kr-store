@@ -3600,3 +3600,27 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+.pokekr-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 99px;
+  margin-bottom: 4px;
+}
+.pokekr-badge--new { background: #E60012; color: #fff; }
+.pokekr-badge--sale { background: #fff0f0; color: #E60012; border: 0.5px solid #E60012; }
+.pokekr-badge--soldout { background: #f0f0f0; color: #888; }
+.pokekr-badge--preorder { background: #E6F1FB; color: #185FA5; border: 0.5px solid #85B7EB; }
+.pokekr-stock {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: 11px;
+}
+.pokekr-stock__label--in { color: #1D9E75; font-weight: 700; }
+.pokekr-stock__label--low { color: #BA7517; font-weight: 700; }
+.pokekr-stock__label--out { color: #888; font-weight: 700; }
+.pokekr-stock__qty { color: #888; }
