@@ -1,3 +1,8 @@
+* {
+  font-family: 'Segoe UI', Segoe UI, sans-serif !important;
+  font-weight: 700 !important;
+}
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
