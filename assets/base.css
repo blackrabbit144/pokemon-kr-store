@@ -3655,3 +3655,18 @@ details-disclosure > details {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.slideshow__text .banner__heading,
+.slideshow__text .banner__text {
+  text-decoration: none !important;
+}
+
+.slideshow__slide a .banner__heading,
+.slideshow__slide a .banner__text p {
+  text-decoration: none !important;
+}
+
+.slideshow__slide.slider__slide,
+.slideshow__slide.slider__slide * {
+  text-decoration: none !important;
+}

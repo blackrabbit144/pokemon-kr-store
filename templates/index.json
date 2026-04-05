@@ -9,12 +9,13 @@
             "heading": "New Korean Pokémon Packs",
             "subheading": "Authentic sealed packs shipped worldwide",
             "link": "/collections/all",
+            "image":"shopify://shop_images/260316.png",
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "show_text_box": true,
+            "show_text_box": false,
             "image_overlay_opacity": 20,
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-3"
           }
         },
         "slide_2": {
@@ -23,12 +24,13 @@
             "heading": "Pre-Order Now",
             "subheading": "Reserve the latest Korean releases before they sell out",
             "link": "/collections/pre-order",
+            "image":"shopify://shop_images/260315.png",
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "show_text_box": true,
+            "show_text_box": false,
             "image_overlay_opacity": 20,
-            "color_scheme": "scheme-1"
+            "color_scheme": "scheme-3"
           }
         }
       },
@@ -38,7 +40,7 @@
         "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
-        "change_slides_speed": 3,
+        "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our products"
@@ -66,7 +68,7 @@
       },
       "block_order": ["promo_1", "promo_2", "promo_3", "promo_4"],
       "settings": {
-        "title": "",
+        "title": "Promotions",
         "heading_size": "h2",
         "image_ratio": "square",
         "image_shape": "default",
