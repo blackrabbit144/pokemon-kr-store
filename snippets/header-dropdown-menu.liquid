@@ -76,6 +76,16 @@
                     {%- endif -%}
                   </li>
                 {%- endfor -%}
+              {%- if link.handle == 'sealed' -%}
+                  <li>
+                    <a
+                      href="/collections/all"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      All Products
+                    </a>
+                  </li>
+                {%- endif -%}
               </ul>
             </details>
           </header-menu>
