@@ -478,13 +478,69 @@
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
-                {%- render 'buy-buttons',
-                  block: block,
-                  product: product,
-                  product_form_id: product_form_id,
-                  section_id: section.id,
-                  show_pickup_availability: true
-                -%}
+  {%- render 'buy-buttons',
+    block: block,
+    product: product,
+    product_form_id: product_form_id,
+    section_id: section.id,
+    show_pickup_availability: true
+  -%}
+
+  <div class="product__custom-actions">
+    <!-- Wishlist button -->
+    <button
+      type="button"
+      class="product__wishlist-btn button button--secondary"
+      onclick="this.classList.toggle('wished'); this.textContent = this.classList.contains('wished') ? '♥ Added to wishlist' : '♡ Add to wishlist';"
+    >
+      ♡ Add to wishlist
+    </button>
+
+    <!-- Refund policy popup -->
+    <button
+      type="button"
+      class="product__refund-btn link"
+      onclick="document.getElementById('refund-modal-{{ section.id }}').style.display='flex'"
+    >
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      Refund & return policy
+    </button>
+
+    <!-- Copy link -->
+    <button
+      type="button"
+      class="product__share-btn link"
+      onclick="navigator.clipboard.writeText(window.location.href); this.textContent='✓ Link copied!'; setTimeout(()=>this.textContent='Copy link', 2000);"
+    >
+      Copy link
+    </button>
+
+  <!-- Refund modal -->
+  <div
+    id="refund-modal-{{ section.id }}"
+    style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.4); z-index:9999; align-items:center; justify-content:center;"
+    onclick="if(event.target===this)this.style.display='none'"
+  >
+    <div style="background:#fff; border-radius:12px; padding:28px; max-width:400px; width:90%; position:relative;">
+      <h3 style="font-size:16px; font-weight:700; margin-bottom:14px; color:#111;">Refund & Return Policy</h3>
+      <ul style="font-size:13px; color:#444; line-height:2; padding-left:16px;">
+        <li>Refunds accepted within <strong>14 days</strong> of delivery.</li>
+        <li>Items must be <strong>unopened and factory sealed</strong>.</li>
+        <li>Opened packs are <strong>non-refundable</strong>.</li>
+        <li>Damaged items must be reported within <strong>48 hours</strong> with photo evidence.</li>
+        <li>Return shipping costs are the buyer's responsibility.</li>
+        <li>Refunds processed within <strong>5–7 business days</strong>.</li>
+      </ul>
+      <p style="font-size:12px; color:#888; margin-top:12px;">Questions? Contact us at <span style="color:#E60012;">support@yourdomain.com</span></p>
+      <button
+        type="button"
+        onclick="document.getElementById('refund-modal-{{ section.id }}').style.display='none'"
+        style="width:100%; margin-top:16px; padding:10px; background:#f0f0f0; border:none; border-radius:8px; font-size:13px; font-weight:700; cursor:pointer;"
+      >
+        Close
+      </button>
+    </div>
+  </div>
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">

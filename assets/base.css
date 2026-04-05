@@ -3624,3 +3624,34 @@ details-disclosure > details {
 .pokekr-stock__label--low { color: #BA7517; font-weight: 700; }
 .pokekr-stock__label--out { color: #888; font-weight: 700; }
 .pokekr-stock__qty { color: #888; }
+
+.product__custom-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.product__refund-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #666;
+  background: none;
+  border: 0.5px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-align: left;
+}
+.product__refund-btn:hover { border-color: #E60012; color: #E60012; }
+.product__wishlist-btn { width: 100%; }
+.product__wishlist-btn.wished { background: #fff0f0; color: #E60012; }
+.product__share-btn {
+  font-size: 12px;
+  color: #888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
